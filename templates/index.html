@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <!-- if you want to change the <head> somehow, you can do that here -->
+{% endblock head %}
+
+{% block content %}
+<body>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">
+    <script type=text/javascript src="{{ url_for('static', filename='js/Jquery.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <header class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+        <section class="collapse navbar-collapse">
+            <nav class="col-2">
+                <img src="{{url_for('static', filename='images/logo1.png')}}" class="img-fluid" style="width:100%">
+            </nav>
+            <nav class="navbar navbar-dark  box-shadow col-6">
+                <article class="container d-flex justify-content-between">
+                    <a href="javascript:void(0);" class="navbar-brand d-flex align-items-center">生產品質智能預警系統</a>
+                </article>
+            </nav>
+            <form class="form-inline my-2 my-lg-0 col-4">
+                <input class="form-control mr-sm-2" type="text" placeholder="搜尋">
+                <button class="btn bg-primary btn-outline-success my-2 my-sm-0 text-white" type="button" > 查詢 </button>
+            </form>
+        </section>
+
+    </header>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <article class="container">
+                <h1 class="jumbotron-heading">
+                    久堂廠 PM21 63 Group 塗佈量預測
+                </h1>
+                <nav class="col-md-12">
+                  <img src="{{url_for('static', filename='images/img1.png')}}" class="img-fluid " style="width: 100%;">
+                </nav>
+            </article>
+            {% include 'content.html' %}
+        </section>
+
+
+    </main>
+
+</body>
+{% include 'footer.html' %}
+{% endblock content %}

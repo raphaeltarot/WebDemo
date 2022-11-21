@@ -1,0 +1,148 @@
+<section class="album py-5 bg-light">
+  <article class="container">
+    <aside class="row">
+      <nav class="col-md-8">
+        <h3> AVM量測</h3>
+        <article class="row text-center container" style="margin-bottom:1em">
+          <nav class="col-md-3 row" >
+              {% set n = 3 %}
+              {% set n = n +3 %}
+              <select class="custom-select">
+                {%for i in range(3, 73)%}
+
+                    <option {% if i == n %}
+                            {% set n = n+3 %}
+                              selected="selected"
+
+                            {% endif %}
+                >G{{ i }}</option>
+                {%endfor%}
+              </select>
+
+          </nav>
+          <nav class="col-md-9">
+            <img src="{{url_for('static', filename='images/img2.png')}}" class="img-fluid" style="height:8em">
+          </nav>
+
+        </article>
+        <article class="row text-center container" style="margin-bottom:1em">
+          <nav class="col-md-3 row">
+
+              {% set n = n +3 %}
+              <select class="custom-select">
+                {%for i in range(3, 73)%}
+
+                    <option {% if i == n %}
+                            {% set n = n+3 %}
+                              selected="selected"
+
+                            {% endif %}
+                >G{{ i }}</option>
+                {%endfor%}
+              </select>
+
+          </nav>
+          <nav class="col-md-9">
+            <img src="{{url_for('static', filename='images/img2.png')}}" class="img-fluid" style="height:8em">
+          </nav>
+        </article>
+        <article class="row text-center container" style="margin-bottom:1em">
+          <nav class="col-md-3 row">
+
+              {% set n = n +3 %}
+              <select class="custom-select">
+                {%for i in range(3, 73)%}
+
+                    <option {% if i == n %}
+                            {% set n = n+3 %}
+                              selected="selected"
+
+                            {% endif %}
+                >G{{ i }}</option>
+                {%endfor%}
+              </select>
+
+          </nav>
+          <nav class="col-md-9">
+            <img src="{{url_for('static', filename='images/img2.png')}}" class="img-fluid" style="height:8em">
+          </nav>
+        </article>
+        <article class="row text-center container" style="margin-bottom:1em">
+          <nav class="col-md-3 row">
+
+              {% set n = n +3 %}
+              <select class="custom-select">
+                {%for i in range(3, 73)%}
+
+                    <option {% if i == n %}
+                            {% set n = n+3 %}
+                              selected="selected"
+
+                            {% endif %}
+                >G{{ i }}</option>
+                {%endfor%}
+              </select>
+
+          </nav>
+          <nav class="col-md-9">
+            <img src="{{url_for('static', filename='images/img2.png')}}" class="img-fluid" style="height:8em">
+          </nav>
+        </article>
+        <article class="row text-center container" style="margin-bottom:1em">
+          <nav class="col-md-3 row">
+
+              {% set n = n +3 %}
+              <select class="custom-select">
+                {%for i in range(3, 73)%}
+
+                    <option {% if i == n %}
+                            {% set n = n+3 %}
+                              selected="selected"
+
+                            {% endif %}
+                >G{{ i }}</option>
+                {%endfor%}
+              </select>
+
+          </nav>
+          <nav class="col-md-9">
+            <img src="{{url_for('static', filename='images/img2.png')}}" class="img-fluid" style="height:8em">
+          </nav>
+        </article>
+        <article class="row text-center container" style="margin-bottom:1em">
+          <nav class="col-md-3 row">
+
+              {% set n = n +3 %}
+              <select class="custom-select">
+                {%for i in range(3, 73)%}
+
+                    <option {% if i == n %}
+                            {% set n = n+3 %}
+                              selected="selected"
+
+                            {% endif %}
+                >G{{ i }}</option>
+                {%endfor%}
+              </select>
+
+          </nav>
+          <nav class="col-md-9">
+            <img src="{{url_for('static', filename='images/img2.png')}}" class="img-fluid" style="height:8em">
+          </nav>
+        </article>
+      </nav>
+      <nav class="col-md-4">
+        <article>
+          <aside>
+            <h3> G6 GSI異常資訊</h3>
+          </aside>
+          <nav class="col-md-12">
+            <img src="{{url_for('static', filename='images/img3.png')}}" class="img-fluid" style="height:40em ">
+          </nav>
+
+        </article>
+      </nav>
+    </aside>
+  </article>
+
+</section>
